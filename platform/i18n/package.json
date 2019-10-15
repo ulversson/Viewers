@@ -49,5 +49,6 @@
     "i18next-browser-languagedetector": "^3.0.1",
     "locize-cli": "^4.8.0",
     "react-i18next": "^10.11.0"
-  }
+  },
+  "gitHead": "853e8f818321eff7c136061d820e97d0a69bf86a"
 }

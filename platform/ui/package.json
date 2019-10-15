@@ -63,5 +63,6 @@
     "docz-theme-default": "1.2.0",
     "lodash.clonedeep": "^4.5.0",
     "react-powerplug": "1.0.0"
-  }
+  },
+  "gitHead": "853e8f818321eff7c136061d820e97d0a69bf86a"
 }

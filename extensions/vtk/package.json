@@ -63,5 +63,6 @@
     "react-i18next": "^10.11.0",
     "react-redux": "^7.1.0",
     "redux": "^4.0.1"
-  }
+  },
+  "gitHead": "853e8f818321eff7c136061d820e97d0a69bf86a"
 }
