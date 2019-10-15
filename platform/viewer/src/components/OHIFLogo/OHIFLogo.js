@@ -9,10 +9,9 @@ function OHIFLogo() {
       target="_blank"
       rel="noopener noreferrer"
       className="header-brand"
-      href="http://ohif.org"
+      href="https://my-hive.uk"
     >
-      <Icon name="ohif-logo" className="header-logo-image" />
-      <Icon name="ohif-text-logo" className="header-logo-text" />
+      McCollum Consultants DICOM browser
     </a>
   );
 }

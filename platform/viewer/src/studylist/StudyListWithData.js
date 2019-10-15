@@ -40,19 +40,31 @@ class StudyListWithData extends Component {
   };
 
   static rowsPerPage = 25;
-  static defaultSort = { field: 'patientName', order: 'desc' };
+  static defaultSort = { field: 'studyDate', order: 'asc' };
 
   static studyListDateFilterNumDays = 25000; // TODO: put this in the settings
   static defaultStudyDateFrom = moment()
     .subtract(StudyListWithData.studyListDateFilterNumDays, 'days')
     .toDate();
   static defaultStudyDateTo = new Date();
+
+  static getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+    if (!results) return undefined;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
   static defaultSearchData = {
     currentPage: 0,
     rowsPerPage: StudyListWithData.rowsPerPage,
     studyDateFrom: StudyListWithData.defaultStudyDateFrom,
     studyDateTo: StudyListWithData.defaultStudyDateTo,
     sortData: StudyListWithData.defaultSort,
+    patientName: StudyListWithData.getParameterByName('patientName'),
   };
 
   componentDidMount() {
@@ -73,6 +85,7 @@ class StudyListWithData extends Component {
 
   componentDidUpdate(prevProps) {
     if (!this.state.searchData && !this.state.studies) {
+      StudyListWithData.defaultSearchData.patientName = this.props.filters.patientName;
       this.searchForStudies();
     }
     if (this.props.server !== prevProps.server) {
