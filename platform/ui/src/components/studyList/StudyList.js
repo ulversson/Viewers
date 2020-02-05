@@ -349,6 +349,7 @@ class StudyList extends Component {
                             type="text"
                             className="form-control studylist-search"
                             id={fieldName}
+                            disabled={fieldName === 'patientName'}
                             value={this.state.searchData[fieldName]}
                             onKeyDown={this.onInputKeydown}
                             onChange={this.getChangeHandler(fieldName)}
