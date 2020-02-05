@@ -12,6 +12,7 @@ import { isInclusivelyBeforeDay } from 'react-dates';
 import moment from 'moment';
 import debounce from 'lodash.debounce';
 import { withTranslation } from '../../utils/LanguageProvider';
+import { getParameterByName } from '../../../../globals';
 
 const today = moment();
 const lastWeek = moment().subtract(7, 'day');
@@ -36,8 +37,8 @@ class StudyList extends Component {
 
   static defaultProps = {
     currentPage: 0,
-    rowsPerPage: 25,
-    studyListDateFilterNumDays: 7,
+    rowsPerPage: 100,
+    studyListDateFilterNumDays: 30,
   };
 
   static studyDatePresets = [
@@ -59,6 +60,7 @@ class StudyList extends Component {
   ];
 
   constructor(props) {
+    console.log(props);
     super(props);
 
     const sortData = {
@@ -113,6 +115,17 @@ class StudyList extends Component {
       this.delayedSearch.cancel();
       this.setSearchData(key, event.target.value, this.search);
     };
+  }
+
+  componentDidMount() {
+    let patientName = getParameterByName('patientName');
+    if (
+      patientName !== undefined &&
+      patientName !== '' &&
+      patientName !== null
+    ) {
+      this.setSearchData('patientName', patientName, this.search);
+    }
   }
 
   setSearchData(key, value, callback) {
@@ -336,7 +349,7 @@ class StudyList extends Component {
                             type="text"
                             className="form-control studylist-search"
                             id={fieldName}
-                            value={this.state[fieldName]}
+                            value={this.state.searchData[fieldName]}
                             onKeyDown={this.onInputKeydown}
                             onChange={this.getChangeHandler(fieldName)}
                             onBlur={this.getBlurHandler(fieldName)}

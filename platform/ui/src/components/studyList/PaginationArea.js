@@ -6,7 +6,7 @@ import { withTranslation } from '../../utils/LanguageProvider';
 class PaginationArea extends PureComponent {
   static defaultProps = {
     pageOptions: [5, 10, 25, 50, 100],
-    rowsPerPage: 25,
+    rowsPerPage: 100,
     currentPage: 0,
   };
 

@@ -16,7 +16,7 @@
 10 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
 11 silly hasTags
 12 verbose hasTags true
-13 silly git-describe.sync "@ohif/core@1.3.1-0-g01860b609" => {"lastTagName":"@ohif/core@1.3.1","lastVersion":"1.3.1","refCount":"0","sha":"01860b609","isDirty":false}
+13 silly git-describe.sync "@ohif/core@1.3.2-alpha.3-0-g3881a3484-dirty" => {"lastTagName":"@ohif/core@1.3.2-alpha.3","lastVersion":"1.3.2-alpha.3","refCount":"0","sha":"3881a3484","isDirty":true}
 14 warn force-publish all packages
 15 info Assuming all packages changed
 16 verbose updated @ohif/extension-cornerstone
@@ -38,8 +38,8 @@
 32 silly lifecycle No script for "preversion" in "@ohif/core", continuing
 33 silly lifecycle No script for "preversion" in "@ohif/i18n", continuing
 34 silly lifecycle No script for "preversion" in "@ohif/ui", continuing
-35 silly lifecycle No script for "version" in "@ohif/core", continuing
-36 silly independent for @ohif/core at /Users/marcin/Kod/Viewers/platform/core
+35 silly lifecycle No script for "version" in "@ohif/i18n", continuing
+36 silly independent for @ohif/i18n at /Users/marcin/Kod/Viewers/platform/i18n
 37 verbose getChangelogConfig using preset "conventional-changelog-angular"
 38 silly npa Result {
 38 silly npa   type: 'tag',
@@ -57,56 +57,56 @@
 38 silly npa   hosted: undefined }
 39 verbose getChangelogConfig Attempting to resolve preset "conventional-changelog-angular"
 40 info getChangelogConfig Successfully resolved preset "conventional-changelog-angular"
-41 silly lifecycle No script for "version" in "@ohif/ui", continuing
-42 silly independent for @ohif/ui at /Users/marcin/Kod/Viewers/platform/ui
-43 silly lifecycle No script for "version" in "@ohif/extension-dicom-html", continuing
-44 silly independent for @ohif/extension-dicom-html at /Users/marcin/Kod/Viewers/extensions/dicom-html
-45 silly lifecycle No script for "version" in "@ohif/i18n", continuing
-46 silly independent for @ohif/i18n at /Users/marcin/Kod/Viewers/platform/i18n
-47 silly lifecycle No script for "version" in "@ohif/extension-cornerstone", continuing
-48 silly independent for @ohif/extension-cornerstone at /Users/marcin/Kod/Viewers/extensions/cornerstone
-49 silly lifecycle No script for "version" in "@ohif/extension-dicom-microscopy", continuing
-50 silly independent for @ohif/extension-dicom-microscopy at /Users/marcin/Kod/Viewers/extensions/dicom-microscopy
-51 silly lifecycle No script for "version" in "@ohif/extension-dicom-pdf", continuing
-52 silly independent for @ohif/extension-dicom-pdf at /Users/marcin/Kod/Viewers/extensions/dicom-pdf
-53 silly independent writing new entry: "## [1.0.1-alpha.0](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-html@1.0.0...@ohif/extension-dicom-html@1.0.1-alpha.0) (2019-10-12)\n\n**Note:** Version bump only for package @ohif/extension-dicom-html\n\n\n\n"
-54 silly independent writing new entry: "## [1.3.2-alpha.0](https://github.com/OHIF/Viewers/compare/@ohif/extension-cornerstone@1.3.1...@ohif/extension-cornerstone@1.3.2-alpha.0) (2019-10-12)\n\n**Note:** Version bump only for package @ohif/extension-cornerstone\n\n\n\n"
-55 silly independent writing new entry: "## [1.3.2-alpha.0](https://github.com/OHIF/Viewers/compare/@ohif/core@1.3.1...@ohif/core@1.3.2-alpha.0) (2019-10-12)\n\n**Note:** Version bump only for package @ohif/core\n\n\n\n"
-56 silly independent writing new entry: "## [0.50.7-alpha.0](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-microscopy@0.50.6...@ohif/extension-dicom-microscopy@0.50.7-alpha.0) (2019-10-12)\n\n**Note:** Version bump only for package @ohif/extension-dicom-microscopy\n\n\n\n"
-57 verbose independent wrote /Users/marcin/Kod/Viewers/extensions/dicom-html/CHANGELOG.md
-58 verbose independent wrote /Users/marcin/Kod/Viewers/extensions/cornerstone/CHANGELOG.md
-59 verbose independent wrote /Users/marcin/Kod/Viewers/platform/core/CHANGELOG.md
-60 verbose independent wrote /Users/marcin/Kod/Viewers/extensions/dicom-microscopy/CHANGELOG.md
-61 silly independent writing new entry: "## [1.0.1-alpha.0](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-pdf@1.0.0...@ohif/extension-dicom-pdf@1.0.1-alpha.0) (2019-10-12)\n\n**Note:** Version bump only for package @ohif/extension-dicom-pdf\n\n\n\n"
-62 silly independent writing new entry: "## [0.53.5-alpha.0](https://github.com/OHIF/Viewers/compare/@ohif/ui@0.53.4...@ohif/ui@0.53.5-alpha.0) (2019-10-12)\n\n**Note:** Version bump only for package @ohif/ui\n\n\n\n"
-63 silly independent writing new entry: "## [0.50.6-alpha.0](https://github.com/OHIF/Viewers/compare/@ohif/i18n@0.50.5...@ohif/i18n@0.50.6-alpha.0) (2019-10-12)\n\n**Note:** Version bump only for package @ohif/i18n\n\n\n\n"
-64 verbose independent wrote /Users/marcin/Kod/Viewers/extensions/dicom-pdf/CHANGELOG.md
-65 verbose independent wrote /Users/marcin/Kod/Viewers/platform/ui/CHANGELOG.md
-66 silly lifecycle No script for "preversion" in "@ohif/extension-vtk", continuing
+41 silly lifecycle No script for "version" in "@ohif/extension-cornerstone", continuing
+42 silly independent for @ohif/extension-cornerstone at /Users/marcin/Kod/Viewers/extensions/cornerstone
+43 silly lifecycle No script for "version" in "@ohif/extension-dicom-microscopy", continuing
+44 silly independent for @ohif/extension-dicom-microscopy at /Users/marcin/Kod/Viewers/extensions/dicom-microscopy
+45 silly lifecycle No script for "version" in "@ohif/extension-dicom-pdf", continuing
+46 silly independent for @ohif/extension-dicom-pdf at /Users/marcin/Kod/Viewers/extensions/dicom-pdf
+47 silly lifecycle No script for "version" in "@ohif/ui", continuing
+48 silly independent for @ohif/ui at /Users/marcin/Kod/Viewers/platform/ui
+49 silly lifecycle No script for "version" in "@ohif/core", continuing
+50 silly independent for @ohif/core at /Users/marcin/Kod/Viewers/platform/core
+51 silly lifecycle No script for "version" in "@ohif/extension-dicom-html", continuing
+52 silly independent for @ohif/extension-dicom-html at /Users/marcin/Kod/Viewers/extensions/dicom-html
+53 silly independent writing new entry: "## [0.53.5-alpha.4](https://github.com/OHIF/Viewers/compare/@ohif/ui@0.53.5-alpha.3...@ohif/ui@0.53.5-alpha.4) (2019-10-15)\n\n**Note:** Version bump only for package @ohif/ui\n\n\n\n"
+54 silly independent writing new entry: "## [0.50.7-alpha.4](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-microscopy@0.50.7-alpha.3...@ohif/extension-dicom-microscopy@0.50.7-alpha.4) (2019-10-15)\n\n**Note:** Version bump only for package @ohif/extension-dicom-microscopy\n\n\n\n"
+55 silly independent writing new entry: "## [1.3.2-alpha.4](https://github.com/OHIF/Viewers/compare/@ohif/extension-cornerstone@1.3.2-alpha.3...@ohif/extension-cornerstone@1.3.2-alpha.4) (2019-10-15)\n\n**Note:** Version bump only for package @ohif/extension-cornerstone\n\n\n\n"
+56 silly independent writing new entry: "## [1.3.2-alpha.4](https://github.com/OHIF/Viewers/compare/@ohif/core@1.3.2-alpha.3...@ohif/core@1.3.2-alpha.4) (2019-10-15)\n\n**Note:** Version bump only for package @ohif/core\n\n\n\n"
+57 verbose independent wrote /Users/marcin/Kod/Viewers/platform/ui/CHANGELOG.md
+58 silly independent writing new entry: "## [1.0.1-alpha.4](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-html@1.0.1-alpha.3...@ohif/extension-dicom-html@1.0.1-alpha.4) (2019-10-15)\n\n**Note:** Version bump only for package @ohif/extension-dicom-html\n\n\n\n"
+59 verbose independent wrote /Users/marcin/Kod/Viewers/extensions/dicom-microscopy/CHANGELOG.md
+60 verbose independent wrote /Users/marcin/Kod/Viewers/extensions/cornerstone/CHANGELOG.md
+61 silly independent writing new entry: "## [1.0.1-alpha.4](https://github.com/OHIF/Viewers/compare/@ohif/extension-dicom-pdf@1.0.1-alpha.3...@ohif/extension-dicom-pdf@1.0.1-alpha.4) (2019-10-15)\n\n**Note:** Version bump only for package @ohif/extension-dicom-pdf\n\n\n\n"
+62 verbose independent wrote /Users/marcin/Kod/Viewers/platform/core/CHANGELOG.md
+63 silly lifecycle No script for "preversion" in "@ohif/extension-vtk", continuing
+64 silly independent writing new entry: "## [0.50.6-alpha.4](https://github.com/OHIF/Viewers/compare/@ohif/i18n@0.50.6-alpha.3...@ohif/i18n@0.50.6-alpha.4) (2019-10-15)\n\n**Note:** Version bump only for package @ohif/i18n\n\n\n\n"
+65 verbose independent wrote /Users/marcin/Kod/Viewers/extensions/dicom-html/CHANGELOG.md
+66 verbose independent wrote /Users/marcin/Kod/Viewers/extensions/dicom-pdf/CHANGELOG.md
 67 verbose independent wrote /Users/marcin/Kod/Viewers/platform/i18n/CHANGELOG.md
 68 silly lifecycle No script for "version" in "@ohif/extension-vtk", continuing
 69 silly independent for @ohif/extension-vtk at /Users/marcin/Kod/Viewers/extensions/vtk
-70 silly independent writing new entry: "## [0.52.8-alpha.0](https://github.com/OHIF/Viewers/compare/@ohif/extension-vtk@0.52.7...@ohif/extension-vtk@0.52.8-alpha.0) (2019-10-12)\n\n**Note:** Version bump only for package @ohif/extension-vtk\n\n\n\n"
+70 silly independent writing new entry: "## [0.52.8-alpha.4](https://github.com/OHIF/Viewers/compare/@ohif/extension-vtk@0.52.8-alpha.3...@ohif/extension-vtk@0.52.8-alpha.4) (2019-10-15)\n\n**Note:** Version bump only for package @ohif/extension-vtk\n\n\n\n"
 71 verbose independent wrote /Users/marcin/Kod/Viewers/extensions/vtk/CHANGELOG.md
 72 silly lifecycle No script for "preversion" in "@ohif/viewer", continuing
 73 silly lifecycle No script for "version" in "@ohif/viewer", continuing
 74 silly independent for @ohif/viewer at /Users/marcin/Kod/Viewers/platform/viewer
-75 silly independent writing new entry: "## [1.6.3-alpha.0](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.6.2...@ohif/viewer@1.6.3-alpha.0) (2019-10-12)\n\n**Note:** Version bump only for package @ohif/viewer\n\n\n\n"
+75 silly independent writing new entry: "## [1.6.3-alpha.4](https://github.com/OHIF/Viewers/compare/@ohif/viewer@1.6.3-alpha.3...@ohif/viewer@1.6.3-alpha.4) (2019-10-15)\n\n**Note:** Version bump only for package @ohif/viewer\n\n\n\n"
 76 verbose independent wrote /Users/marcin/Kod/Viewers/platform/viewer/CHANGELOG.md
 77 silly lifecycle No script for "version" in "root", continuing
-78 silly gitAdd [ '/Users/marcin/Kod/Viewers/platform/core/package.json',
-78 silly gitAdd   '/Users/marcin/Kod/Viewers/platform/ui/package.json',
-78 silly gitAdd   '/Users/marcin/Kod/Viewers/extensions/dicom-html/package.json',
-78 silly gitAdd   '/Users/marcin/Kod/Viewers/platform/i18n/package.json',
+78 silly gitAdd [ '/Users/marcin/Kod/Viewers/platform/i18n/package.json',
 78 silly gitAdd   '/Users/marcin/Kod/Viewers/extensions/cornerstone/package.json',
 78 silly gitAdd   '/Users/marcin/Kod/Viewers/extensions/dicom-microscopy/package.json',
 78 silly gitAdd   '/Users/marcin/Kod/Viewers/extensions/dicom-pdf/package.json',
-78 silly gitAdd   '/Users/marcin/Kod/Viewers/extensions/dicom-html/CHANGELOG.md',
+78 silly gitAdd   '/Users/marcin/Kod/Viewers/platform/ui/package.json',
+78 silly gitAdd   '/Users/marcin/Kod/Viewers/platform/core/package.json',
+78 silly gitAdd   '/Users/marcin/Kod/Viewers/extensions/dicom-html/package.json',
+78 silly gitAdd   '/Users/marcin/Kod/Viewers/platform/ui/CHANGELOG.md',
+78 silly gitAdd   '/Users/marcin/Kod/Viewers/extensions/dicom-microscopy/CHANGELOG.md',
 78 silly gitAdd   '/Users/marcin/Kod/Viewers/extensions/cornerstone/CHANGELOG.md',
 78 silly gitAdd   '/Users/marcin/Kod/Viewers/platform/core/CHANGELOG.md',
-78 silly gitAdd   '/Users/marcin/Kod/Viewers/extensions/dicom-microscopy/CHANGELOG.md',
+78 silly gitAdd   '/Users/marcin/Kod/Viewers/extensions/dicom-html/CHANGELOG.md',
 78 silly gitAdd   '/Users/marcin/Kod/Viewers/extensions/dicom-pdf/CHANGELOG.md',
-78 silly gitAdd   '/Users/marcin/Kod/Viewers/platform/ui/CHANGELOG.md',
 78 silly gitAdd   '/Users/marcin/Kod/Viewers/platform/i18n/CHANGELOG.md',
 78 silly gitAdd   '/Users/marcin/Kod/Viewers/extensions/vtk/package.json',
 78 silly gitAdd   '/Users/marcin/Kod/Viewers/extensions/vtk/CHANGELOG.md',
@@ -114,63 +114,63 @@
 78 silly gitAdd   '/Users/marcin/Kod/Viewers/platform/viewer/CHANGELOG.md' ]
 79 silly gitCommit chore(release): publish [skip ci]
 79 silly gitCommit
-79 silly gitCommit  - @ohif/extension-cornerstone@1.3.2-alpha.0
-79 silly gitCommit  - @ohif/extension-dicom-html@1.0.1-alpha.0
-79 silly gitCommit  - @ohif/extension-dicom-microscopy@0.50.7-alpha.0
-79 silly gitCommit  - @ohif/extension-dicom-pdf@1.0.1-alpha.0
-79 silly gitCommit  - @ohif/extension-vtk@0.52.8-alpha.0
-79 silly gitCommit  - @ohif/core@1.3.2-alpha.0
-79 silly gitCommit  - @ohif/i18n@0.50.6-alpha.0
-79 silly gitCommit  - @ohif/ui@0.53.5-alpha.0
-79 silly gitCommit  - @ohif/viewer@1.6.3-alpha.0
+79 silly gitCommit  - @ohif/extension-cornerstone@1.3.2-alpha.4
+79 silly gitCommit  - @ohif/extension-dicom-html@1.0.1-alpha.4
+79 silly gitCommit  - @ohif/extension-dicom-microscopy@0.50.7-alpha.4
+79 silly gitCommit  - @ohif/extension-dicom-pdf@1.0.1-alpha.4
+79 silly gitCommit  - @ohif/extension-vtk@0.52.8-alpha.4
+79 silly gitCommit  - @ohif/core@1.3.2-alpha.4
+79 silly gitCommit  - @ohif/i18n@0.50.6-alpha.4
+79 silly gitCommit  - @ohif/ui@0.53.5-alpha.4
+79 silly gitCommit  - @ohif/viewer@1.6.3-alpha.4
 80 verbose git [ 'commit',
 80 verbose git   '-F',
-80 verbose git   '/private/var/folders/2f/l6k1k68d4lx2h390_b8r48900000gn/T/f9f68be5-0566-48e7-96b5-d95ccf7f06d1/lerna-commit.txt' ]
-81 silly gitTag @ohif/extension-cornerstone@1.3.2-alpha.0
+80 verbose git   '/private/var/folders/2f/l6k1k68d4lx2h390_b8r48900000gn/T/98218625-a4f0-4e93-af27-51938fb3347f/lerna-commit.txt' ]
+81 silly gitTag @ohif/extension-cornerstone@1.3.2-alpha.4
 82 verbose git [ 'tag',
-82 verbose git   '@ohif/extension-cornerstone@1.3.2-alpha.0',
+82 verbose git   '@ohif/extension-cornerstone@1.3.2-alpha.4',
 82 verbose git   '-m',
-82 verbose git   '@ohif/extension-cornerstone@1.3.2-alpha.0' ]
-83 silly gitTag @ohif/extension-dicom-html@1.0.1-alpha.0
+82 verbose git   '@ohif/extension-cornerstone@1.3.2-alpha.4' ]
+83 silly gitTag @ohif/extension-dicom-html@1.0.1-alpha.4
 84 verbose git [ 'tag',
-84 verbose git   '@ohif/extension-dicom-html@1.0.1-alpha.0',
+84 verbose git   '@ohif/extension-dicom-html@1.0.1-alpha.4',
 84 verbose git   '-m',
-84 verbose git   '@ohif/extension-dicom-html@1.0.1-alpha.0' ]
-85 silly gitTag @ohif/extension-dicom-microscopy@0.50.7-alpha.0
+84 verbose git   '@ohif/extension-dicom-html@1.0.1-alpha.4' ]
+85 silly gitTag @ohif/extension-dicom-microscopy@0.50.7-alpha.4
 86 verbose git [ 'tag',
-86 verbose git   '@ohif/extension-dicom-microscopy@0.50.7-alpha.0',
+86 verbose git   '@ohif/extension-dicom-microscopy@0.50.7-alpha.4',
 86 verbose git   '-m',
-86 verbose git   '@ohif/extension-dicom-microscopy@0.50.7-alpha.0' ]
-87 silly gitTag @ohif/extension-dicom-pdf@1.0.1-alpha.0
+86 verbose git   '@ohif/extension-dicom-microscopy@0.50.7-alpha.4' ]
+87 silly gitTag @ohif/extension-dicom-pdf@1.0.1-alpha.4
 88 verbose git [ 'tag',
-88 verbose git   '@ohif/extension-dicom-pdf@1.0.1-alpha.0',
+88 verbose git   '@ohif/extension-dicom-pdf@1.0.1-alpha.4',
 88 verbose git   '-m',
-88 verbose git   '@ohif/extension-dicom-pdf@1.0.1-alpha.0' ]
-89 silly gitTag @ohif/extension-vtk@0.52.8-alpha.0
+88 verbose git   '@ohif/extension-dicom-pdf@1.0.1-alpha.4' ]
+89 silly gitTag @ohif/extension-vtk@0.52.8-alpha.4
 90 verbose git [ 'tag',
-90 verbose git   '@ohif/extension-vtk@0.52.8-alpha.0',
+90 verbose git   '@ohif/extension-vtk@0.52.8-alpha.4',
 90 verbose git   '-m',
-90 verbose git   '@ohif/extension-vtk@0.52.8-alpha.0' ]
-91 silly gitTag @ohif/core@1.3.2-alpha.0
+90 verbose git   '@ohif/extension-vtk@0.52.8-alpha.4' ]
+91 silly gitTag @ohif/core@1.3.2-alpha.4
 92 verbose git [ 'tag',
-92 verbose git   '@ohif/core@1.3.2-alpha.0',
+92 verbose git   '@ohif/core@1.3.2-alpha.4',
 92 verbose git   '-m',
-92 verbose git   '@ohif/core@1.3.2-alpha.0' ]
-93 silly gitTag @ohif/i18n@0.50.6-alpha.0
+92 verbose git   '@ohif/core@1.3.2-alpha.4' ]
+93 silly gitTag @ohif/i18n@0.50.6-alpha.4
 94 verbose git [ 'tag',
-94 verbose git   '@ohif/i18n@0.50.6-alpha.0',
+94 verbose git   '@ohif/i18n@0.50.6-alpha.4',
 94 verbose git   '-m',
-94 verbose git   '@ohif/i18n@0.50.6-alpha.0' ]
-95 silly gitTag @ohif/ui@0.53.5-alpha.0
+94 verbose git   '@ohif/i18n@0.50.6-alpha.4' ]
+95 silly gitTag @ohif/ui@0.53.5-alpha.4
 96 verbose git [ 'tag',
-96 verbose git   '@ohif/ui@0.53.5-alpha.0',
+96 verbose git   '@ohif/ui@0.53.5-alpha.4',
 96 verbose git   '-m',
-96 verbose git   '@ohif/ui@0.53.5-alpha.0' ]
-97 silly gitTag @ohif/viewer@1.6.3-alpha.0
+96 verbose git   '@ohif/ui@0.53.5-alpha.4' ]
+97 silly gitTag @ohif/viewer@1.6.3-alpha.4
 98 verbose git [ 'tag',
-98 verbose git   '@ohif/viewer@1.6.3-alpha.0',
+98 verbose git   '@ohif/viewer@1.6.3-alpha.4',
 98 verbose git   '-m',
-98 verbose git   '@ohif/viewer@1.6.3-alpha.0' ]
+98 verbose git   '@ohif/viewer@1.6.3-alpha.4' ]
 99 silly lifecycle No script for "postversion" in "@ohif/extension-cornerstone", continuing
 100 silly lifecycle No script for "postversion" in "@ohif/extension-dicom-html", continuing
 101 silly lifecycle No script for "postversion" in "@ohif/extension-dicom-microscopy", continuing
@@ -186,10 +186,5 @@
 111 silly parseGitRepo
 112 verbose git [ 'config', '--get', 'remote.origin.url' ]
 113 silly createGitHubClient
-114 error Error: A GH_TOKEN environment variable is required.
-114 error     at createGitHubClient (/Users/marcin/Kod/Viewers/node_modules/@lerna/github-client/lib/github-client.js:17:11)
-114 error     at createClient (/Users/marcin/Kod/Viewers/node_modules/@lerna/version/lib/create-release.js:16:14)
-114 error     at createRelease (/Users/marcin/Kod/Viewers/node_modules/@lerna/version/lib/create-release.js:24:18)
-114 error     at tasks.push (/Users/marcin/Kod/Viewers/node_modules/@lerna/version/index.js:271:9)
-114 error     at pReduce (/Users/marcin/Kod/Viewers/node_modules/p-waterfall/index.js:4:73)
-114 error     at Promise.all.then.value (/Users/marcin/Kod/Viewers/node_modules/p-reduce/index.js:16:10)
+114 error HttpError: Not Found
+114 error     at response.text.then.message (/Users/marcin/Kod/Viewers/node_modules/@octokit/request/dist-node/index.js:66:23)

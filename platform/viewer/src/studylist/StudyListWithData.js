@@ -39,7 +39,7 @@ class StudyListWithData extends Component {
     studyListFunctionsEnabled: true,
   };
 
-  static rowsPerPage = 25;
+  static rowsPerPage = 100;
   static defaultSort = { field: 'studyDate', order: 'asc' };
 
   static studyListDateFilterNumDays = 25000; // TODO: put this in the settings
@@ -86,7 +86,11 @@ class StudyListWithData extends Component {
   componentDidUpdate(prevProps) {
     if (!this.state.searchData && !this.state.studies) {
       StudyListWithData.defaultSearchData.patientName = this.props.filters.patientName;
-      this.searchForStudies();
+      let params = {
+        ...StudyListWithData.defaultSearchData,
+        ...(this.props.filters || {}),
+      };
+      this.searchForStudies(params);
     }
     if (this.props.server !== prevProps.server) {
       this.setState({
@@ -110,6 +114,7 @@ class StudyListWithData extends Component {
       limit: searchData.rowsPerPage,
       offset: searchData.currentPage * searchData.rowsPerPage,
     };
+    debugger;
 
     if (server.supportsFuzzyMatching) {
       filter.fuzzymatching = true;
