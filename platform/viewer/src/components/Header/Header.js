@@ -116,18 +116,7 @@ class Header extends Component {
           )}
         </div>
 
-        <div className="header-menu">
-          <span className="research-use">{t('INVESTIGATIONAL USE ONLY')}</span>
-          <Dropdown title={t('Options')} list={this.options} align="right" />
-          <AboutModal
-            {...this.state}
-            onCancel={() =>
-              this.setState({
-                isOpen: false,
-              })
-            }
-          />
-        </div>
+        <div className="header-menu"></div>
       </div>
     );
   }
